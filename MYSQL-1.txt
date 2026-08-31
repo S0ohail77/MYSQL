@@ -1,0 +1,24 @@
+CREATE DATABASE Firsttable;
+
+USE Firsttable;
+
+CREATE TABLE first(
+id INT ,
+Age INT,
+Name VARCHAR(30) NOT NULL,
+email VARCHAR (30) UNIQUE,
+followers INT DEFAULT 0,
+following INT DEFAULT 0,
+CONSTRAINT CHECK (age>=18),
+PRIMARY KEY(id)
+
+
+);
+
+CREATE TABLE post(
+id INT PRIMARY KEY,
+content VARCHAR(100),
+user_id INT ,
+FOREIGN KEY (user_id) REFERENCES first(id)
+);
+
