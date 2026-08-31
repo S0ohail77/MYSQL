@@ -1,5 +1,7 @@
-CREATE DATABASE Firsttable;
+-- Create a table // Using Primary key or Foreign key
 
+
+CREATE DATABASE Firsttable;
 USE Firsttable;
 
 CREATE TABLE first(
