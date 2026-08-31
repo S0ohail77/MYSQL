@@ -1,7 +1,5 @@
--- Create a table // Using Primary key or Foreign key
-
-
 CREATE DATABASE Firsttable;
+
 USE Firsttable;
 
 CREATE TABLE first(
@@ -17,10 +15,24 @@ PRIMARY KEY(id)
 
 );
 
+INSERT INTO first
+(id,Age,Name,email,followers,following)
+VALUES
+(1,20,"Sohail","sohail@123",245,79),
+(2,22,"Sameer","sameer@123",115,88),
+(3,23,"Arzin","arzin@123",665,445);
+
+
+
 CREATE TABLE post(
 id INT PRIMARY KEY,
 content VARCHAR(100),
 user_id INT ,
 FOREIGN KEY (user_id) REFERENCES first(id)
 );
+
+-- * means select all data from table (*==all)  
+-- if we want to print unique data then write DISTINCT in front of coloum which we want to check 
+
+SELECT * FROM first; 
 
