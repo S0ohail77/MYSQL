@@ -1,3 +1,5 @@
+-- create database and table // using primary key and foreign key 
+
 CREATE DATABASE Firsttable;
 
 USE Firsttable;
