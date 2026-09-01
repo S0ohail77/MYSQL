@@ -4,3 +4,9 @@ FROM user
 WHERE age >= 15 AND followers >=200; --(AND Operator )
 
 WHERE age >= 15 OR followers >=200; -- (OR Operator ) 
+
+WHERE age BETWEEN 15 AND 17 -- (BETWEEN Operator)
+
+WHERE email IN ("abc@123.com", "efg@123.com"); 	-- (IN Operator matches any value in the list)
+
+WHERE email NOT IN ("abc@123.com", "efg@123.com"); 	-- (NOT Operator to negate the given condition)
