@@ -1,0 +1,6 @@
+USE instagram;
+SELECT name , age, followers
+FROM user
+WHERE age >= 15 AND followers >=200; --(AND Operator )
+
+WHERE age >= 15 OR followers >=200; -- (OR Operator ) 
