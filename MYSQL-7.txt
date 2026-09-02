@@ -1,0 +1,12 @@
+Having Clause
+Similar to where i.e. applies some condition on rows.
+But it is used when we want to apply any condition after grouping.
+
+
+SELECT col1, col2
+FROM table_name
+GROUP BY col_name(s)
+HAVING condition;
+
+-WHERE is for the table, HAVING  is for a group 
+- Grouping is necessary for HAVING
