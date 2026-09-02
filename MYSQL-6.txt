@@ -1,0 +1,11 @@
+Group by Clause 
+Groups rows that have the same values into summary rows.
+It collects data from multiple records and groups the result by one or more column.
+
+
+SELECT col1, col2
+FROM table_name
+GROUP BY col_name(s);
+
+
+*Generally we  use group by with some aggregation function.
