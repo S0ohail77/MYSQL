@@ -1,0 +1,11 @@
+Table Queries
+
+Update(to update existing rows)
+
+UPDATE table_name
+SET col1= val1, col2 = val2
+WHERE condition;
+
+
+*protect from error 
+SET SQL_SAFE_UPDATES = 0;
