@@ -1,0 +1,40 @@
+Table Queries 
+
+DELETE(to delete existing rows)
+
+DELETE FROM table_name
+WHERE condition
+
+
+_________________________________
+
+
+
+Alter(to change the schema)
+
+1. ADD Column
+ALTER TABLE table_name
+ADD COLUMN column_name datatype constraints;
+
+2.DROP Column
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+3. RENAME Table
+ALTER TABLE table_name
+RENAME TO new_table_name;
+
+4. CHANGE Column(rename)
+ALTER TABLE table_name
+CHANGE COLUMN old_name new_name new_datatype new_constraints;
+
+
+5. MODIFY Column (modify/constraints)
+ALTER TABLE table_name
+MODIFY col_name new_datatype new_constraint;
+
+
+____________________________________________________________________
+
+Truncate(to delete table's data)
+TRUNCATE TABLE table_name
