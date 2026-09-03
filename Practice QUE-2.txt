@@ -1,0 +1,48 @@
+CREATE TABLE student(
+rollno INT PRIMARY KEY,
+name VARCHAR (30),
+city VARCHAR(30),
+mark INT
+);
+
+INSERT INTO student
+(rollno, name, city, mark)
+VALUES
+(44, "Rukai", "Tokyo", 89),
+(47, "jinte", "Russia",96),
+(67, "Kim", "Korea", 78),
+(1, "Daniel", "Korea", 99);
+
+SELECT * FROM student;
+
+SELECT * FROM student
+WHERE mark > 75;
+
+SELECT DISTINCT city
+FROM student;
+
+SELECT city , max(mark)
+FROM student
+GROUP BY city;
+
+
+SELECT avg(mark)
+FROM student;
+
+
+ALTER TABLE student
+ADD COLUMN grade VARCHAR(2);
+
+UPDATE student
+SET grade = "O" 
+WHERE grade >= 80 ;
+
+UPDATE student
+SET grade = "A+" 
+WHERE grade >= 60 AND mark < 80;
+
+UPDATE student
+SET grade = "A" 
+WHERE grade >= 40 AND mark < 60 ;
+
+
