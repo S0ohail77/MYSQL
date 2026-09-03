@@ -1,0 +1,16 @@
+ SELECT * FROM teacher
+ WHERE salary >55000; 
+
+ ALTER TABLE teacher
+ CHANGE COLUMN salary ctc INT;
+
+ UPDATE teacher
+ SET ctc = ctc + ctc * .025
+
+ ALTER TABLE teacher
+ ADD COLUMN city VARCHAR(50) DEFAULT "Amravati"; 
+ SELECT * FROM teacher;
+
+ALTER TABLE teacher
+DROP COLUMN ctc;
+SELECT * FROM teacher;
