@@ -1,3 +1,5 @@
+//Questions for apply total properties of MYSQL in TABLE
+
 CREATE TABLE student(
 rollno INT PRIMARY KEY,
 name VARCHAR (30),
