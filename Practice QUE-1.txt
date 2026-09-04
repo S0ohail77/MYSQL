@@ -1,4 +1,6 @@
- SELECT * FROM teacher
+//Make a table using MYSQL
+
+SELECT * FROM teacher
  WHERE salary >55000; 
 
  ALTER TABLE teacher
